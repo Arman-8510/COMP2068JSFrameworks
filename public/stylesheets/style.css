@@ -1,0 +1,229 @@
+/* ==============================
+   General Styles
+============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c9cba3; /* Background color */
+  font-family: Arial, sans-serif; /* Font style */
+}
+
+/* Navbar Styles */
+.navbar {
+  position: sticky; /* Sticky navbar */
+  top: 0; /* Fix it to the top */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Main Content Styles */
+.main-content {
+  padding: 50px 20px; /* Add padding */
+}
+
+.profile-img {
+  width: 200px; /* Set a fixed width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Circle profile image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #6c757d; /* Footer color */
+}
+
+footer ul {
+  padding: 0; /* Reset padding */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .profile-img {
+      width: 150px; /* Smaller image on mobile */
+  }
+  h1 {
+      font-size: 2em; /* Adjust heading size */
+  }
+  p {
+      font-size: 1.2em; /* Adjust paragraph size */
+  }
+}
+
+
+/* ==============================
+   About Section Styles
+============================== */
+.about-section {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-title {
+  font-size: 36px;
+  color: #3c3c3c;
+  margin-bottom: 20px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-image {
+  flex: 1;
+  max-width: 300px;
+  margin-right: 20px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.about-text {
+  flex: 2;
+  text-align: left;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-image {
+    margin: 0 0 20px;
+  }
+}
+
+/* ==============================
+   Contact Section Styles
+============================== */
+.contact-section {
+  background: #f4f4f4; /* Light background */
+  padding: 40px 20px; /* Padding */
+  text-align: center; /* Center text */
+}
+
+.contact-container {
+  max-width: 800px; /* Max width for the container */
+  margin: auto; /* Center container */
+  padding: 20px; /* Padding inside the container */
+  background: #fff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.contact-title {
+  font-size: 36px; /* Title font size */
+  color: #3c3c3c; /* Title color */
+  margin-bottom: 20px; /* Space below title */
+}
+
+/* Form styling */
+.contact-form {
+  display: flex; /* Flex layout */
+  flex-direction: column; /* Vertical stacking */
+  align-items: center; /* Center items */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%; /* Full width */
+  max-width: 500px; /* Limit width */
+  padding: 15px; /* Padding */
+  margin: 10px 0; /* Space between inputs */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+}
+
+.contact-form button {
+  background: #3c3c3c; /* Dark background */
+  color: #fff; /* White text */
+  padding: 10px 20px; /* Padding */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  transition: background 0.3s; /* Transition */
+}
+
+.contact-form button:hover {
+  background: #555; /* Darker on hover */
+}
+
+/* ==============================
+   Heading Styles
+============================== */
+h1 {
+  text-align: center;
+  color: #3c3c3c;
+  margin: 20px 0;
+}
+
+/* ==============================
+   Container and Row Styles
+============================== */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+/* ==============================
+   Project Card Styles
+============================== */
+.project {
+  text-align: center;
+  margin: 15px;
+  flex: 1 1 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.project img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.project-title {
+  font-size: 24px;
+  color: rgb(97, 140, 219);
+  margin: 15px 0;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
