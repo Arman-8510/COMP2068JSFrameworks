@@ -1,0 +1,521 @@
+:root {
+  /* Color Variables */
+  --main-color: #ff914d;
+  --bg-color: #1e3d58;
+  --text-color: #ffffff;
+  --body-bg-color: #f0f0f0;
+  --body-text-color: #333;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--body-bg-color);
+  color: var(--body-text-color);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: var(--bg-color);
+  color: #fff;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.logo:hover {
+  color: #ff6347;
+}
+
+.nav_bar {
+  display: flex;
+}
+
+.navlist {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.navlist li {
+  margin: 0 15px;
+}
+
+.navlist a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.navlist a:hover {
+  color: #ff6347;
+}
+
+.first {
+  font-weight: 500;
+}
+
+section.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 100px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  text-align: center;
+}
+
+.home-content {
+  max-width: 50%;
+}
+
+.home-content h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+.home-content h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.home-content p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+/* Avatar Styling */
+.avatar-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--main-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-box {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn-box a {
+  text-decoration: none;
+  padding: 12px 30px;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  font-size: 1rem;
+  border-radius: 25px;
+  transition: 0.3s ease;
+}
+
+.btn-box a:hover {
+  background-color: var(--text-color);
+  color: var(--main-color);
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  color: var(--text-color);
+  font-size: 2rem;
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--main-color);
+}
+
+footer {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.footer-about,
+.footer-nav,
+.footer-social {
+  flex-basis: 30%;
+}
+
+.footer-about p,
+.footer-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-nav ul {
+  list-style: none;
+}
+
+.footer-nav a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.social-icons a {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  margin-right: 15px;
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--main-color);
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--text-color);
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  section.home {
+    padding: 40px 20px;
+  }
+
+  .home-content {
+    max-width: 100%;
+  }
+
+  .btn-box {
+    justify-content: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+/* About Me Section */
+.about-me {
+  padding: 60px 40px; /* Padding around the about section */
+  background-color: var(--body-bg-color); /* Light background for contrast */
+  color: var(--body-text-color); /* Main text color */
+  text-align: center; /* Center align text */
+}
+
+.about-container {
+  display: flex; /* Flex layout for content and image */
+  justify-content: space-between; /* Space between content and image */
+  align-items: center; /* Center vertically */
+  max-width: 1200px; /* Max width for the container */
+  margin: 0 auto; /* Center the container */
+}
+
+.about-content {
+  max-width: 60%; /* Limit width of text content */
+}
+
+.about-content h1 {
+  font-size: 2.5rem; /* Size for the main heading */
+  color: var(--main-color); /* Accent color for the heading */
+  margin-bottom: 20px; /* Margin below the heading */
+}
+
+.about-content p {
+  font-size: 1.1rem; /* Font size for paragraphs */
+  line-height: 1.6; /* Line height for better readability */
+  margin-bottom: 20px; /* Margin below each paragraph */
+}
+
+.about-image img {
+  width: 250px; /* Fixed width for the image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Circular profile picture */
+  border: 3px solid var(--main-color); /* Border color matching theme */
+}
+
+.btn {
+  display: inline-block; /* Inline block for button styling */
+  padding: 12px 30px; /* Padding for button */
+  background-color: var(--main-color); /* Button background color */
+  color: var(--text-color); /* Button text color */
+  font-size: 1rem; /* Font size for button text */
+  border-radius: 25px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.btn:hover {
+  background-color: var(--text-color); /* Background color on hover */
+  color: var(--main-color); /* Text color on hover */
+}
+
+/* Skills Section */
+.skills {
+  padding: 40px 20px; /* Padding for skills section */
+  background-color: var(--body-bg-color); /* Light background for contrast */
+  color: var(--body-text-color); /* Main text color */
+  text-align: center; /* Center align text */
+}
+
+.skills h2 {
+  font-size: 2rem; /* Size for the skills heading */
+  color: var(--main-color); /* Accent color for the heading */
+  margin-bottom: 30px; /* Margin below the heading */
+}
+
+.skills-grid {
+  display: grid; /* Grid layout for skills */
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px, 1fr)
+  ); /* Responsive columns */
+  gap: 20px; /* Gap between skill boxes */
+  max-width: 1200px; /* Max width for the grid */
+  margin: 0 auto; /* Center the grid */
+}
+
+.skill-box {
+  background-color: #fff; /* White background for skill boxes */
+  padding: 20px; /* Padding inside skill boxes */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  transition: transform 0.3s; /* Transition for hover effect */
+}
+
+.skill-box:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.skill-box h3 {
+  margin-bottom: 10px; /* Margin below skill title */
+  color: var(--main-color); /* Accent color for skill titles */
+}
+
+.skill-box p {
+  font-size: 0.9rem; /* Font size for skill descriptions */
+  color: var(--body-text-color); /* Main text color for descriptions */
+}
+
+/* Projects Section */
+.projects-section {
+  padding: 60px 40px;
+  background-color: var(--body-bg-color);
+  color: var(--body-text-color);
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: var(--main-color);
+  margin-bottom: 20px;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-content h2 {
+  font-size: 1.8rem;
+  color: var(--main-color);
+  margin-bottom: 15px;
+}
+
+.project-content p {
+  font-size: 1rem;
+  color: var(--body-text-color);
+  margin-bottom: 20px;
+}
+
+.project-content .btn {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  font-size: 1rem;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.project-content .btn:hover {
+  background-color: var(--text-color);
+  color: var(--main-color);
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 60px 40px;
+  background-color: var(--body-bg-color);
+  color: var(--body-text-color);
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--main-color);
+}
+
+.section-description {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: var(--body-text-color);
+}
+
+/* Form and Map Layout */
+.form-map {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.contact-form-container {
+  flex-basis: 45%;
+}
+
+.map-container {
+  flex-basis: 45%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: var(--body-text-color);
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: var(--main-color);
+  outline: none;
+}
+
+.btn {
+  padding: 12px 30px;
+  background-color: var(--main-color);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ff6347;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .form-map {
+    flex-direction: column;
+  }
+
+  .contact-form-container,
+  .map-container {
+    flex-basis: 100%;
+  }
+}
