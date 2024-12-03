@@ -1,13 +1,13 @@
 # ToDoList
 
-一個簡單的用 EJS 寫的 ToDoList 單網頁 CRUD app 應用程式。
+A  HBS based   ToDoList CRUD app
 
 # Function
 
-- Read 讀取儲存於 MongoDB Atlas 資料庫的 ToDo 項目
-- Add 新增 ToDo 項目
-- Delete 刪除 ToDo 項目
-- Edit 編輯 Todo 項目
+- Read  MongoDB Atlas ToDo 
+- Add ToDo 
+- Delete  ToDo 
+- Edit  Todo 
 
 # Demo
 
@@ -51,7 +51,7 @@ you can start developing the ToDoList!
 
 # Tech
 
-- EJS
+- HBS
 - Node.js
 - Express
 - Mongoose
